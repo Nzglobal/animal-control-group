@@ -18,9 +18,9 @@ jobs:
       with:
         dotnet-version: 3.1.x
     - name: Setup Chrome
-    - uses: browser-actions/setup-chrome@v0.0.0
+      uses: browser-actions/setup-chrome@v0.0.0
     - name: Setup ChromeDriver
-    - uses: nanasess/setup-chromedriver@master
+      uses: nanasess/setup-chromedriver@master
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
