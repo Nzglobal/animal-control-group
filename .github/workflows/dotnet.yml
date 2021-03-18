@@ -53,7 +53,7 @@ jobs:
         # Artifact name
         name: animal-control-build # optional, default is artifact
         # A file, directory or wildcard pattern that describes what to upload
-        path: deploy
+        path: ${{ env.Wap_Project_Directory }}\deploy
         # The desired behavior if no files are found using the provided path.   
       
       
