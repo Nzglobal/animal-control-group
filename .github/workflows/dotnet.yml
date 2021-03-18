@@ -51,9 +51,9 @@ jobs:
       uses: actions/upload-artifact@v2.2.2
       with:
         # Artifact name
-        name: artifact # optional, default is artifact
+        name: animal-control-build # optional, default is artifact
         # A file, directory or wildcard pattern that describes what to upload
-        path: '/home/runner/work/animal-control-group/animal-control-group/AnimalAdoption.Common.Logic/bin/Debug/netstandard2.0/publish/' 
+        path: deploy
         # The desired behavior if no files are found using the provided path.   
       
       
