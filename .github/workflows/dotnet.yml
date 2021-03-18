@@ -32,15 +32,10 @@ jobs:
           options.add_argument('--no-sandbox')
           options.add_argument('--disable-gpu')
           options.add_argument('--disable-dev-shm-usage')       
-          driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/bin/chromedriver')
-          driver.get("http://github.com/")
-          print ('Page title is ' + driver.title)
+          driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/bin/chromedriver')       
           EOF
 
-          python3 test.py
-    - name: Run Chrome
-      run: | 
-           '/usr/bin/google-chrome'
+          python3 test.py 
     - name: Restore dependencies
       run: dotnet restore
     - name: Build
