@@ -34,7 +34,7 @@ jobs:
           options.add_argument('--disable-dev-shm-usage')
           options.add_argument('disable-infobars')
           options.add_argument("--disable-extensions")
-          driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/bin/chromedriver')
+          driver = webdriver.Chrome(chrome_options=options, executable_path='/usr/bin/google-chrome')
           driver.get("http://github.com/")
           print ('Page title is ' + driver.title)
           EOF
